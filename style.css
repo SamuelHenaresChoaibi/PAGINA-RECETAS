@@ -21,14 +21,45 @@ a {
     flex-grow: 2;
 }
 
+h1 {
+    font-family: system-ui, -apple-system, Roboto, sans-serif;
+    font-size: 35px;
+    color: black;
+    text-align: left;
+    font-weight: normal;
+    font-style: normal;
+    font-weight: bolder;
+    margin-left: 100px;
+}
+
+h2 {
+    font-family: system-ui, -apple-system, Roboto, sans-serif;
+    font-size: 25px;
+    color: black;
+    text-align: left;
+    font-weight: normal;
+    font-style: normal;
+    font-weight: bold;
+    margin-left: 100px;
+}
+
 .margin-top-flex {
     margin-left: 20px;
     margin-right: 20px;
     text-align: center;
 }
 
-.texto-12 {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.texto-tam-12 {
+    font-family: system-ui, -apple-system, Roboto, sans-serif;
+    font-size: 12px;
+    color: black;
+    text-align: center;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.texto-tam-30{
+    font-family: system-ui, -apple-system, Roboto, sans-serif;
     font-size: 12px;
     color: black;
     text-align: center;
@@ -41,7 +72,12 @@ a {
     margin-right: 20px;
     text-align: center;
     color:black;
-    
+    font-family: system-ui, -apple-system, Roboto, sans-serif;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    font-weight: normal;
+    font-style: normal;
 }
 
 .texto-cabezal {
@@ -52,6 +88,33 @@ a {
     left:345px;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.texto-healthy{
+    font-family: system-ui, -apple-system, Roboto, sans-serif;
+    font-size: 12px;
+    color: black;
+    text-align: left;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.see-recipe{
+    border: solid 2px;
+    font-family: system-ui, -apple-system, Roboto, sans-serif;
+    border-radius: 5px;
+    width:80px;
+    height: 25px;
+    color: bisque;
+    text-align: center;
+    position: relative;
+    left: 350px;
+}
+
+.img-recetas {
+    margin-left: 100px;
+    width: 25%;
+    height: 25%;
 }
 
 #avatar {
@@ -67,13 +130,12 @@ a {
     position: static;
     flex-direction: column;
     flex-shrink: 5;
+    justify-content: left;
     height: 350px;
     background-image: url("imagenes/comida.jpg");
     background-size:cover;
     background-attachment: fixed;
     position:relative;
-    
-
 }
 
 #barra-arriba {
@@ -88,26 +150,24 @@ a {
 
 }
 
+
+
 #categorias {
     display: flex;
     flex-direction: row;
     flex-grow: 3;
     justify-content: left;
-    padding: 5px;
+    padding: 2px;
     border-width: 15px;
     border-color: black;
     text-align:center;
+    margin-left: 100px;
 }
 
-#see-recipe{
-    border: solid 2px;
-    font-family: system-ui, -apple-system, Roboto, sans-serif;
-    border-radius: 5px;
-    width:80px;
-    height: 25px;
-    color: bisque;
-    text-align: center;
-    position: relative;
-    left: 350px;
-    top: 75px;
+#latest-recipes{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
+    margin-left: 100px;
+
 }
