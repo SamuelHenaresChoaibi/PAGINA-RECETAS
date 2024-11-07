@@ -19,6 +19,7 @@
     <title>Recetas de Cocina</title>
     <!-- Define el título del documento que aparece en la pestaña del navegador -->
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -45,48 +46,118 @@
                         </path>
                     </svg></div>
 
-                <div>
-                    <a class="margin-top-flex" href="#lastest-recipes">Lastest recipes</a>
-                    <a class="margin-top-flex" href="#most-popular-recipes">Most popular recipes</a>
-                    <a class="margin-top-flex" href="#categories">Categories</a>
+                <div id="texto-barra">
+                    <a class="texto-margin-beetwen-words-top" href="#lastest-recipes">Lastest recipes</a>
+                    <a  class="texto-margin-beetwen-words-top" href="#most-popular-recipes">Most popular recipes</a>
+                    <a class="texto-margin-beetwen-words-top" href="#categories">Categories</a>
+
                 </div>
                 <div id="avatar">
-                    <img src="imagenes/avatar.png" alt="Avatar" width="35px" height="35px">
+                    <img src="imagenes/avatar.png" alt="Avatar" width="60px" height="55px">
 
                 </div>
             </div>
-            <div id="cabezal">
-                <p class="texto-cabezal"><span style="font-size: 15px;">Healthy</span></p>
-                <p class="texto-cabezal"><span style="font-size: 40px;"><b>10 Minute Magic</b></span></p>
-                <p class="texto-cabezal"><span style="font-size: 30px;">Orange Sauce</span></p>
-                <p class="see-recipe">see recipe</p>
+
+
+            <div id="cabezal-image">
+                <div id="cabezal-text-center">
+                    <p class="texto-cabezal"><span style="font-size: 40px;">Healthy</span></p>
+                    <p class="texto-cabezal"><span style="font-size: 80px;"><b>10 Minute Magic</b></span></p>
+                    <p class="texto-cabezal"><span style="font-size: 55px;">Orange Sauce</span></p>
+                    <p id="square-see-recipe-center">see recipe</p>
+                </div>
             </div>
 
             <nav id="categorias">
                 <p class="texto-barra-nav">View by category:</p>
-                <p class="texto-barra-nav"><b>Appetizers</b></p>
-                <p class="texto-barra-nav"><b>Beverages</b></p>
-                <p class="texto-barra-nav"><b>Desserts</b></p>
-                <p class="texto-barra-nav"><b>Healthy</b></p>
+                <a class="texto-barra-nav" href="#appetizers"><b>Appetizers</b></a>
+                <a class="texto-barra-nav" href="#beverages"><b>Beverages</b></a>
+                <a class="texto-barra-nav" href="#desserts"><b>Desserts</b></a>
+                <a class="texto-barra-nav" href="#healthy"><b>Healthy</b></a>
             </nav>
         </header>
     </article>
     <hr>
     <article id="seccion1">
+
+
         <div id="latest-recipes">
             <h1>Latest recipes</h1>
-            <img class="img-recetas" src="imagenes/butterscotch-pie.jpg" alt="Grantma's Butterscotch Pie" width="15%" height="15%">
-            <h2>Grantma's Butterscotch Pie</h2>
-            <p class="texto-healthy">Healthy</p>
-            <p class="texto-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a fringilla risus. Vestibulum ultricies,
-                nisi nec dictum posuere, odio ante viverra est, quis convallis sapien massa ac felis. Suspendisse
-                viverra vel ex in luctus. Donec ac auctor tellus, id elementum eros. Praesent vel hendrerit urna. Donec
-                in risus ex. Aenean maximus magna augue, vitae accumsan nunc placerat in. </p>
-            <p class="see-recipe">see recipe</p>
+
+            <div id="recipes-flex">
+                <div class="inside-flex-latest-recipes">
+                    <img id="img-pie" src="imagenes/butterscotch-pie.jpg" alt="Grantma's Butterscotch Pie">
+                    <h2>Grantma's Butterscotch Pie</h2>
+                    <p class="texto-healthy">Healthy</p>
+                    <p class="texto-tam-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a fringilla
+                        risus.
+                        Vestibulum ultricies,
+                        nisi nec dictum posuere, odio ante viverra est, quis convallis sapien massa ac felis.
+                        Suspendisse
+                        viverra vel ex in luctus. Donec ac auctor tellus, id elementum eros. Praesent vel hendrerit
+                        urna.
+                        Donec
+                        in risus ex. Aenean maximus magna augue, vitae accumsan nunc placerat in. </p>
+                    <p class="square-see-recipe">see recipe</p>
+                </div>
+
+
+                <div class="inside-flex-latest-recipes">
+
+                    <img id="img-sauce" src="imagenes/orange-sauce.jpg" alt="Orange Sauce">
+                    <h2>10 Minute Magic Orange Sauce</h2>
+                    <p class="texto-healthy">Healthy</p>
+                    <p class="texto-tam-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a fringilla
+                        risus.
+                        Vestibulum ultricies,
+                        nisi nec dictum posuere, odio ante viverra est, quis convallis sapien massa ac felis.
+                        Suspendisse
+                        viverra vel ex in luctus. Donec ac auctor tellus, id elementum eros. Praesent vel hendrerit
+                        urna.
+                        Donec
+                        in risus ex. Aenean maximus magna augue, vitae accumsan nunc placerat in. </p>
+                    <p class="square-see-recipe">see recipe</p>
+                </div>
+
+                <div class="inside-flex-latest-recipes">
+            
+                    <img id="img-fish" src="imagenes/english-food.jpeg" alt="Fish and Chips">
+                    <h2>Fish and Chips with Salad</h2>
+                    <p class="texto-healthy">Healthy</p>
+                    <p class="texto-tam-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a fringilla
+                        risus.
+                        Vestibulum ultricies,
+                        nisi nec dictum posuere, odio ante viverra est, quis convallis sapien massa ac felis.
+                        Suspendisse
+                        viverra vel ex in luctus. Donec ac auctor tellus, id elementum eros. Praesent vel hendrerit
+                        urna.
+                        Donec
+                        in risus ex. Aenean maximus magna augue, vitae accumsan nunc placerat in. </p>
+                    <p class="square-see-recipe">see recipe</p>
+                </div>
+                
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+
+        <div id="flex-miss-recipe">
+            <div class="text-flex-miss-a-recipe">
+                <h2>Never miss a recipe</h2>
+                <p>Join thousands of Company subscribers and get our best recipes delivered eack week!</p>
             </div>
 
-    </article>
+            <div class="introduce-mail">
+                <input class="texto-tam-20" type="email" placeholder="Introduce tu email">
+                <button type="button">Enviar
+                </button>
+            </div>
 
+        </div>
+        </div>
+    </article>
 </body>
 
 </html>
