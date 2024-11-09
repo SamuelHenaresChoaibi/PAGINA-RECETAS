@@ -5,6 +5,9 @@ body {
     margin-top: 0;
     width: 100%;
     overflow-x: x;
+    background-image: url("imagenes/background.jpg");
+    background-size: cover;
+    background-size: 100%;
 }
 
 a {
@@ -14,7 +17,7 @@ a {
 h1 {
     font-family: system-ui, -apple-system, Roboto, sans-serif;
     font-size: 55px;
-    color: black;
+    color: white;
     text-align: left;
     font-weight: normal;
     font-style: normal;
@@ -40,9 +43,9 @@ h2 {
 
 }
 
-.texto-margin-beetwen-words-top{
-    margin-left:100px;
-    position:relative;
+.texto-margin-beetwen-words-top {
+    margin-left: 100px;
+    position: relative;
     top: 15px;
     font-family: system-ui, -apple-system, Roboto, sans-serif;
     font-size: 20px;
@@ -71,11 +74,20 @@ h2 {
     font-style: normal;
 }
 
+.texto-tam-35 {
+    font-family: system-ui, -apple-system, Roboto, sans-serif;
+    font-size: 35px;
+    color: black;
+    text-align: justify;
+    font-weight: normal;
+    font-style: normal;
+}
+
 .texto-tam-30 {
     font-family: system-ui, -apple-system, Roboto, sans-serif;
-    font-size: 12px;
+    font-size: 30px;
     color: black;
-    text-align: center;
+    text-align: justify;
     font-weight: normal;
     font-style: normal;
 }
@@ -83,7 +95,7 @@ h2 {
 .texto-barra-nav {
     font-family: system-ui, -apple-system, Roboto, sans-serif;
     font-size: 25px;
-    color: black;
+    color: rgb(255, 255, 255);
     text-align: center;
     font-weight: bolder;
     font-style: normal;
@@ -100,24 +112,35 @@ h2 {
 
 .texto-healthy {
     font-family: system-ui, -apple-system, Roboto, sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     color: black;
     text-align: left;
     font-weight: bolder;
     font-style: normal;
 }
 
+.texto-healthy-white {
+    font-family: system-ui, -apple-system, Roboto, sans-serif;
+    font-size: 25px;
+    color: white;
+    text-align: left;
+    font-weight: bolder;
+    font-style: normal;
+    position: relative;
+    top: 30px;
+}
+
 .square-see-recipe {
-    border: solid 2px;
+    border: solid 3px;
     font-family: system-ui, -apple-system, Roboto, sans-serif;
     border-radius: 50px;
-    width: 80px;
+    width: 85px;
     height: 20px;
     padding: 20px 20px;
-    color: darksalmon;
+    color: grey;
     text-align: center;
     font-size: 17px;
-
+    font-weight: bolder;
 }
 
 
@@ -131,10 +154,10 @@ h2 {
     max-width: 800px;
     margin: 10px;
     padding: 20px;
-    box-sizing: border-box;
+    box-sizing: content-box;
     border: 1px solid #ccc;
     border-radius: 10px;
-    background-color: #f9f9f9;
+    background-color: #e6d2d2;
     flex-wrap: wrap;
 
 }
@@ -144,6 +167,7 @@ h2 {
     flex-wrap: wrap;
     flex-direction: column;
     margin-left: 50px;
+    margin-right: 60px;
     justify-content: left;
     font-family: system-ui, -apple-system, Roboto, sans-serif;
 }
@@ -153,37 +177,159 @@ h2 {
     display: flex;
     align-items: center;
     position: relative;
-    top: 25px;
-    background-color: rgb(231, 157, 133);
+    top: 75px;
+    background-color: rgb(223, 218, 218);
     border: 2px solid #ccc;
     border-radius: 50px;
     padding: 10px;
-    height: 50px;
+    height: 85px;
 
 }
 
 .introduce-mail input[type="email"] {
     border: 0px;
-    background-color: rgb(231, 157, 133);
+    background-color: rgb(223, 218, 218);
     padding: 5px;
-    font-size: 16px;
+    font-size: 25px;
     border-radius: 50px;
     font-size: 20px;
     width: 250px;
-    color: rgb(90, 89, 89);
+    height: 95px;
+    color: rgb(255, 252, 252);
 }
 
 .introduce-mail button {
-    background-color: rgb(235, 174, 153);
-    position:relative;
-    left:10px;
+    background-color: rgb(206, 206, 206);
+    color: black;
+    position: relative;
+    left: 10px;
+    height: 110px;
+    width: 150px;
     color: rgb(90, 89, 89);
     padding: 22px 25px;
     border-radius: 50px;
     font-size: 20px;
 }
 
-#texto-barra{
+.articles-flex-format {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.recipes-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.background-flex-most-popular {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 30%;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 50px;
+    flex-wrap: wrap;
+
+}
+
+.content-flex-most-popular {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 972px;
+    max-width: 100%;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    position: relative;
+    left: 10px;
+    bottom: 200px;
+
+}
+
+.flex-author {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    background-color: rgb(129, 127, 126);
+    max-width: 100%;
+    width: 100%;
+    border: 10px black;
+
+}
+
+.author-information {
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+    padding: 10px;
+}
+
+.pie-de-pagina {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    background-color: rgb(173, 172, 172);
+    width: 100%;
+    border: 10px black;
+    justify-content: space-between;
+}
+
+
+
+.tam-images-recipes {
+    width: inherit;
+    border: solid 0px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.texto-popular-recipes {
+    font-family: system-ui, -apple-system, Roboto, sans-serif;
+    font-size: 35px;
+    color: white;
+    text-align: left;
+    font-weight: normal;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.black-h1 {
+    font-family: system-ui, -apple-system, Roboto, sans-serif;
+    font-size: 55px;
+    color: black;
+    text-align: left;
+    font-weight: normal;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+.tam-iconos {
+    max-width: 75px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+
+}
+
+#texto-barra {
     margin-left: 50px;
     justify-content: space-between;
     font-family: system-ui, -apple-system, Roboto, sans-serif;
@@ -220,10 +366,8 @@ h2 {
 
 
 #cabezal-text-center {
-    top: 200px;
-    left: 400px;
     margin-top: 200px;
-    margin-left: 800px;
+    margin-left: 550px;
 }
 
 #cabezal-image {
@@ -246,10 +390,11 @@ h2 {
     flex-direction: row;
     flex-grow: 3;
     justify-content: space-between;
-    background-color: rgb(212, 169, 154);
+    background: linear-gradient();
     padding: 25px;
     border-width: 15px;
     border-color: black;
+    background-color: rgb(204, 202, 202);
 }
 
 #categorias {
@@ -259,23 +404,13 @@ h2 {
     flex-grow: 3;
     justify-content: left;
     padding: 20px;
-    border-width: 15px;
+    border-width: solid 15px;
     border-color: black;
     text-align: center;
-    margin-left: 100px;
+    background: linear-gradient(grey 50%, black);
 }
 
-#latest-recipes {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-}
+
 
 #title-latest-recipe {
     display: flex;
@@ -286,54 +421,22 @@ h2 {
     text-align: left;
 }
 
-#recipes-flex {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
 
-#img-pie {
-    width: 90%;
-    height: 75%;
-    border: solid 0px;
-    border-radius: 20px;
-    margin-top: 20px;
-}
-
-#img-sauce {
-    width: 73%;
-    height: 25%;
-    border: solid 0px;
-    border-radius: 20px;
-    margin-top: 19px;
-}
-
-#img-fish {
-    width: 100%;
-    height: 25%;
-    border: solid 0px;
-    border-radius: 20px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
 
 #flex-miss-recipe {
     display: flex;
     flex-direction: row;
-    background-color: rgb(248, 197, 180);
+    background-color: rgb(204, 194, 188);
     justify-content: space-between;
     border: solid 1px;
     border-radius: 50px;
-    border-color: burlywood;
-    width: 80%;
+    border-color: rgb(151, 150, 149);
+    width: 90%;
     max-width: 1625px;
     margin: 105px auto;
-    padding: 40px;
+    padding: 50px;
     box-sizing: border-box;
     position: relative;
     left: 15px;
+
 }
