@@ -104,12 +104,12 @@ h2 {
     flex-grow: 2;
 }
 
-.menu-hamburguesa{
+.menu-hamburguesa {
     background-color: rgb(204, 202, 202);
-    color:black;
-    border:none;
+    color: black;
+    border: none;
     font-size: 30px;
-    display:none;
+    display: none;
 
 
 }
@@ -204,7 +204,7 @@ h2 {
     font-size: 20px;
     width: 250px;
     height: 95px;
-    color:black;
+    color: black;
 }
 
 .introduce-mail button {
@@ -297,31 +297,40 @@ h2 {
     background-color: rgb(173, 172, 172);
     width: 100%;
     border: 10px black;
-    justify-content:center;
+    justify-content: center;
 }
 
-.texto-pie-pagina{
+.texto-pie-flex {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-left: 50px;
+    position: relative;
+    top: 15px;
+}
+
+.formato-texto-pie {
+    display: flex;
+    flex-direction: row;
     font-family: system-ui, -apple-system, Roboto, sans-serif;
     font-size: 15px;
     color: black;
     text-align: center;
     font-weight: normal;
     font-style: normal;
-    margin-left: 50px;
     list-style: none;
     text-decoration: none;
-    position:relative;
-    top:15px;
+    margin-top: 30px;
+
+
 }
+
 
 .texto-margin-beetwen-words-bottom {
     margin-left: 100px;
     position: relative;
     top: 45px;
-    right:550px;
+    right: 550px;
     font-family: system-ui, -apple-system, Roboto, sans-serif;
     font-size: 20px;
     color: black;
@@ -332,18 +341,18 @@ h2 {
 }
 
 
-.social-media{
+.social-media {
     display: flex;
     flex-direction: row;
     background-color: rgb(173, 172, 172);
     width: 10%;
     border: 10px black;
-    justify-content:left;
+    justify-content: left;
 }
 
-.logo-pie-pagina{
-    position:relative;
-    top:60px;
+.logo-pie-pagina {
+    position: relative;
+    top: 60px;
     right: 550px;
 
 }
@@ -399,8 +408,8 @@ h2 {
     margin-left: 100px;
     list-style: none;
     text-decoration: none;
-    position:relative;
-    bottom:15px
+    position: relative;
+    bottom: 15px
 }
 
 .barra-arriba {
@@ -440,7 +449,7 @@ h2 {
     background: linear-gradient(grey 50%, black);
 }
 
-.categorias-row{
+.categorias-row {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -513,15 +522,17 @@ h2 {
 
 }
 
-@media (min-width: 1px) and (max-width: 1267px){
-    .menu-hamburguesa{
-        display:block;
+@media (min-width: 1px) and (max-width: 1267px) {
+    .menu-hamburguesa {
+        display: block;
     }
-    .texto-barra{
+
+    .texto-barra {
         display: none;
     }
-    .texto-barra li{
-        display:flex;
+
+    .texto-barra li {
+        display: flex;
         flex-direction: column;
         align-items: end;
         position: absolute;
@@ -532,72 +543,128 @@ h2 {
         padding: 20px 0;
     }
 
-    .avatar{
-        display:none;
+    .avatar {
+        display: none;
     }
+
     #cabezal-text-center {
         margin-left: 50px;
     }
 
     .categorias {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     #flex-miss-recipe {
         flex-direction: column;
-        height: 400px;
-    
-    }
-    .introduce-mail{
-        top:5px;
+        height: 500px;
     }
 
+    .text-flex-miss-a-recipe p {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+
+    .introduce-mail {
+        margin-bottom: 150px;
+        width: 300px;
+    }
+
+
     .introduce-mail input[type="email"] {
-        width: 1000px;
-        height: 5px;
+        width: 200px;
+        height: 85px;
         position: relative;
         right: 10px;
         border-style: none;
-        border:none; padding: 50px;
+        border: none;
+        padding: 10px;
     }
 
     .introduce-mail button {
-        left:25px;
+        margin-right: 50px;
     }
-    .recipes-flex{
+
+    .recipes-flex {
         flex-direction: column;
     }
 
-    .background-flex-most-popular{
+    .background-flex-most-popular {
         max-width: 75%;
     }
-    .flex-author{
+
+    .flex-author {
         flex-direction: column;
     }
-    .pie-de-pagina{
+
+    .pie-de-pagina {
         flex-direction: column;
         width: 100%;
+        padding: 0;
     }
-    .logo-pie-pagina{
-        left:335px;
-        margin-bottom: 50px;
-    }
-    .texto-pie-pagina{
+
+    .texto-pie-flex {
         flex-direction: column;
         justify-content: center;
-        margin-bottom: 100px;
+
     }
 
-    .texto-margin-beetwen-words-bottom{
+    .formato-texto-pie {
+        justify-content: center;
+        position: relative;
+        left: 250px;
+        flex-direction: column;
+    }
+
+    .logo-pie-pagina {
+        left: 150px;
+        margin-bottom: 50px;
+    }
+
+    .texto-pie-pagina {
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 100px;
+    }
+
+    .texto-margin-beetwen-words-bottom {
         margin-bottom: 80px;
-        left:0px;
-        margin-right: 100px;
+        position: relative;
+        right: 325px;
+
     }
 
-    .social-media{
+    .social-media {
         left: 225px;
+        justify-content: flex-start;
+        /* o center, según lo necesites */
+        align-items: center;
+        padding: 0;
+    }
+
+    .inside-flex-latest-recipes {
+        width: 80%;
+    }
+
+    .tam-iconos {
+        position: relative;
+        right: 25px;
+        width: 35px;
+
+    }
+
+    .texto-popular-recipes {
+        font-size: 20px;
+    }
+
+    .texto-healthy-white {
+        font-size: 15px;
+    }
+
+    .content-flex-most-popular {
+        bottom: 140px;
     }
 
 }
