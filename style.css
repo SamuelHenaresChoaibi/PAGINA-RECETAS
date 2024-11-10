@@ -104,6 +104,16 @@ h2 {
     flex-grow: 2;
 }
 
+.menu-hamburguesa{
+    background-color: rgb(204, 202, 202);
+    color:black;
+    border:none;
+    font-size: 30px;
+    display:none;
+
+
+}
+
 .texto-cabezal {
     color: beige;
     font-family: system-ui, -apple-system, Roboto, sans-serif;
@@ -155,7 +165,6 @@ h2 {
     margin: 10px;
     padding: 20px;
     box-sizing: content-box;
-    border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #e6d2d2;
     flex-wrap: wrap;
@@ -195,7 +204,7 @@ h2 {
     font-size: 20px;
     width: 250px;
     height: 95px;
-    color: rgb(255, 252, 252);
+    color:black;
 }
 
 .introduce-mail button {
@@ -288,7 +297,55 @@ h2 {
     background-color: rgb(173, 172, 172);
     width: 100%;
     border: 10px black;
+    justify-content:center;
+}
+
+.texto-pie-pagina{
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    font-family: system-ui, -apple-system, Roboto, sans-serif;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    font-weight: normal;
+    font-style: normal;
+    margin-left: 50px;
+    list-style: none;
+    text-decoration: none;
+    position:relative;
+    top:15px;
+}
+
+.texto-margin-beetwen-words-bottom {
+    margin-left: 100px;
+    position: relative;
+    top: 45px;
+    right:550px;
+    font-family: system-ui, -apple-system, Roboto, sans-serif;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    font-weight: normal;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(173, 172, 172);
+    width: 10%;
+    border: 10px black;
+    justify-content:left;
+}
+
+.logo-pie-pagina{
+    position:relative;
+    top:60px;
+    right: 550px;
+
 }
 
 
@@ -329,8 +386,9 @@ h2 {
 
 }
 
-#texto-barra {
-    margin-left: 50px;
+.texto-barra {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     font-family: system-ui, -apple-system, Roboto, sans-serif;
     font-size: 15px;
@@ -339,16 +397,58 @@ h2 {
     font-weight: normal;
     font-style: normal;
     margin-left: 100px;
+    list-style: none;
+    text-decoration: none;
+    position:relative;
+    bottom:15px
+}
+
+.barra-arriba {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-grow: 3;
+    justify-content: space-between;
+    padding: 25px;
+    border-width: 15px;
+    border-color: black;
+    background-color: rgb(204, 202, 202);
 }
 
 
-#avatar {
+
+
+.avatar {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-left: auto;
     margin-right: 20px;
     text-align: center;
+}
+
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-grow: 3;
+    justify-content: left;
+    padding: 20px;
+    border-width: solid 15px;
+    border-color: black;
+    text-align: center;
+    background: linear-gradient(grey 50%, black);
+}
+
+.categorias-row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-grow: 3;
+    justify-content: left;
+    text-align: center;
+    margin-bottom: 25px;
+
 }
 
 #square-see-recipe-center {
@@ -384,34 +484,6 @@ h2 {
     position: relative;
 }
 
-#barra-arriba {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    flex-grow: 3;
-    justify-content: space-between;
-    background: linear-gradient();
-    padding: 25px;
-    border-width: 15px;
-    border-color: black;
-    background-color: rgb(204, 202, 202);
-}
-
-#categorias {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    flex-grow: 3;
-    justify-content: left;
-    padding: 20px;
-    border-width: solid 15px;
-    border-color: black;
-    text-align: center;
-    background: linear-gradient(grey 50%, black);
-}
-
-
-
 #title-latest-recipe {
     display: flex;
     flex-wrap: wrap;
@@ -438,5 +510,94 @@ h2 {
     box-sizing: border-box;
     position: relative;
     left: 15px;
+
+}
+
+@media (min-width: 1px) and (max-width: 1267px){
+    .menu-hamburguesa{
+        display:block;
+    }
+    .texto-barra{
+        display: none;
+    }
+    .texto-barra li{
+        display:flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        padding: 20px 0;
+    }
+
+    .avatar{
+        display:none;
+    }
+    #cabezal-text-center {
+        margin-left: 50px;
+    }
+
+    .categorias {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+    }
+
+    #flex-miss-recipe {
+        flex-direction: column;
+        height: 400px;
+    
+    }
+    .introduce-mail{
+        top:5px;
+    }
+
+    .introduce-mail input[type="email"] {
+        width: 1000px;
+        height: 5px;
+        position: relative;
+        right: 10px;
+        border-style: none;
+        border:none; padding: 50px;
+    }
+
+    .introduce-mail button {
+        left:25px;
+    }
+    .recipes-flex{
+        flex-direction: column;
+    }
+
+    .background-flex-most-popular{
+        max-width: 75%;
+    }
+    .flex-author{
+        flex-direction: column;
+    }
+    .pie-de-pagina{
+        flex-direction: column;
+        width: 100%;
+    }
+    .logo-pie-pagina{
+        left:335px;
+        margin-bottom: 50px;
+    }
+    .texto-pie-pagina{
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+
+    .texto-margin-beetwen-words-bottom{
+        margin-bottom: 80px;
+        left:0px;
+        margin-right: 100px;
+    }
+
+    .social-media{
+        left: 225px;
+    }
 
 }
