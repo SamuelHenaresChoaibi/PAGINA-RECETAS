@@ -1,48 +1,49 @@
+/* Estilo general del cuerpo */
 body {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
     margin-top: 0;
     width: 100%;
-    overflow-x: x;
+    overflow-x: hidden;
+    /* Cambiado de 'x' a 'hidden' */
     background-image: url("imagenes/background.jpg");
     background-size: cover;
     background-size: 100%;
 }
 
+/* Estilo para enlaces */
 a {
     margin-top: 25px;
 }
 
+/* Estilo para encabezado h1 */
 h1 {
     font-family: system-ui, -apple-system, Roboto, sans-serif;
     font-size: 55px;
     color: white;
     text-align: left;
-    font-weight: normal;
-    font-style: normal;
     font-weight: bolder;
 }
 
+/* Estilo para encabezado h2 */
 h2 {
     font-family: system-ui, -apple-system, Roboto, sans-serif;
     font-size: 25px;
     color: black;
     text-align: left;
-    font-weight: normal;
-    font-style: normal;
     font-weight: bold;
 }
 
-
+/* Clase para margen superior flexible */
 .margin-top-flex {
     margin-left: 20px;
     margin-right: 20px;
     text-align: center;
     margin-bottom: 10px;
-
 }
 
+/* Clase para texto con margen superior entre palabras */
 .texto-margin-beetwen-words-top {
     margin-left: 100px;
     position: relative;
@@ -51,95 +52,89 @@ h2 {
     font-size: 20px;
     color: black;
     text-align: center;
-    font-weight: normal;
-    font-style: normal;
     font-weight: bolder;
 }
 
+/* Clase para texto de tamaño 20 */
 .texto-tam-20 {
     font-family: system-ui, -apple-system, Roboto, sans-serif;
     font-size: 20px;
     color: black;
     text-align: center;
-    font-weight: normal;
-    font-style: normal;
 }
 
+/* Clase para texto de tamaño 12 */
 .texto-tam-12 {
     font-family: system-ui, -apple-system, Roboto, sans-serif;
     font-size: 12px;
     color: black;
     text-align: center;
-    font-weight: normal;
-    font-style: normal;
 }
 
+/* Clase para texto de tamaño 35 */
 .texto-tam-35 {
     font-family: system-ui, -apple-system, Roboto, sans-serif;
     font-size: 35px;
     color: black;
     text-align: justify;
-    font-weight: normal;
-    font-style: normal;
 }
 
+/* Clase para texto de tamaño 30 */
 .texto-tam-30 {
     font-family: system-ui, -apple-system, Roboto, sans-serif;
     font-size: 30px;
     color: black;
     text-align: justify;
-    font-weight: normal;
-    font-style: normal;
 }
 
+/* Clase para texto en barra de navegación */
 .texto-barra-nav {
     font-family: system-ui, -apple-system, Roboto, sans-serif;
     font-size: 25px;
     color: rgb(255, 255, 255);
     text-align: center;
     font-weight: bolder;
-    font-style: normal;
     position: relative;
     justify-content: space-between;
     flex-grow: 2;
 }
 
+/* Estilo para el menú hamburguesa */
 .menu-hamburguesa {
     background-color: rgb(204, 202, 202);
     color: black;
     border: none;
     font-size: 30px;
     display: none;
-
-
 }
 
+/* Clase para texto en el cabezal */
 .texto-cabezal {
     color: beige;
     font-family: system-ui, -apple-system, Roboto, sans-serif;
-
 }
 
+/* Clase para texto de estilo saludable */
 .texto-healthy {
     font-family: system-ui, -apple-system, Roboto, sans-serif;
     font-size: 25px;
     color: black;
     text-align: left;
     font-weight: bolder;
-    font-style: normal;
 }
 
+/* Clase para texto saludable en blanco */
 .texto-healthy-white {
     font-family: system-ui, -apple-system, Roboto, sans-serif;
     font-size: 25px;
     color: white;
     text-align: left;
     font-weight: bolder;
-    font-style: normal;
     position: relative;
     top: 30px;
 }
 
+/* Clase para el cuadro de ver receta */
 .square-see-recipe {
     border: solid 3px;
     font-family: system-ui, -apple-system, Roboto, sans-serif;
@@ -153,8 +148,7 @@ h2 {
     font-weight: bolder;
 }
 
-
-
+/* Clase para el contenedor de las últimas recetas */
 .inside-flex-latest-recipes {
     display: flex;
     flex-direction: column;
@@ -168,9 +162,9 @@ h2 {
     border-radius: 10px;
     background-color: #e6d2d2;
     flex-wrap: wrap;
-
 }
 
+/* Clase para el texto de no perderse una receta */
 .text-flex-miss-a-recipe {
     display: flex;
     flex-wrap: wrap;
@@ -181,7 +175,7 @@ h2 {
     font-family: system-ui, -apple-system, Roboto, sans-serif;
 }
 
-
+/* Clase para el campo de introducir correo */
 .introduce-mail {
     display: flex;
     align-items: center;
@@ -192,9 +186,9 @@ h2 {
     border-radius: 50px;
     padding: 10px;
     height: 85px;
-
 }
 
+/* Estilo para el campo de entrada de correo */
 .introduce-mail input[type="email"] {
     border: 0px;
     background-color: rgb(223, 218, 218);
@@ -207,6 +201,7 @@ h2 {
     color: black;
 }
 
+/* Estilo para el botón de enviar */
 .introduce-mail button {
     background-color: rgb(206, 206, 206);
     color: black;
@@ -220,17 +215,18 @@ h2 {
     font-size: 20px;
 }
 
+/* Clase para el formato de artículos */
 .articles-flex-format {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin: 0 auto;
 }
 
+/* Clase para la flexibilidad de recetas */
 .recipes-flex {
     display: flex;
     flex-direction: row;
@@ -240,6 +236,7 @@ h2 {
     width: 100%;
 }
 
+/* Clase para el fondo de las recetas más populares */
 .background-flex-most-popular {
     display: flex;
     flex-direction: column;
@@ -251,9 +248,9 @@ h2 {
     padding: 20px;
     border-radius: 50px;
     flex-wrap: wrap;
-
 }
 
+/* Clase para el contenido de las recetas más populares */
 .content-flex-most-popular {
     display: flex;
     flex-direction: column;
@@ -269,9 +266,9 @@ h2 {
     position: relative;
     left: 10px;
     bottom: 200px;
-
 }
 
+/* Clase para la flexibilidad del autor */
 .flex-author {
     display: flex;
     flex-direction: row;
@@ -280,9 +277,9 @@ h2 {
     max-width: 100%;
     width: 100%;
     border: 10px black;
-
 }
 
+/* Clase para la información del autor */
 .author-information {
     display: flex;
     flex-direction: column;
@@ -290,6 +287,7 @@ h2 {
     padding: 10px;
 }
 
+/* Clase para el pie de página */
 .pie-de-pagina {
     display: flex;
     flex-direction: row;
@@ -300,6 +298,7 @@ h2 {
     justify-content: center;
 }
 
+/* Clase para el texto del pie de página */
 .texto-pie-flex {
     display: flex;
     flex-direction: row;
@@ -311,8 +310,7 @@ h2 {
     max-height: 100px;
 }
 
-
-
+/* Clase para el margen inferior entre palabras */
 .texto-margin-beetwen-words-bottom {
     margin-left: 100px;
     position: relative;
@@ -322,12 +320,10 @@ h2 {
     font-size: 20px;
     color: black;
     text-align: center;
-    font-weight: normal;
-    font-style: normal;
     font-weight: bolder;
 }
 
-
+/* Clase para la sección de redes sociales */
 .social-media {
     display: flex;
     flex-direction: row;
@@ -337,15 +333,14 @@ h2 {
     justify-content: left;
 }
 
+/* Clase para el logo en el pie de página */
 .logo-pie-pagina {
     position: relative;
     top: 60px;
     right: 550px;
-
 }
 
-
-
+/* Clase para el tamaño de las imágenes de recetas */
 .tam-images-recipes {
     width: inherit;
     border: solid 0px;
@@ -353,26 +348,25 @@ h2 {
     margin-top: 20px;
 }
 
+/* Clase para el texto de recetas populares */
 .texto-popular-recipes {
     font-family: system-ui, -apple-system, Roboto, sans-serif;
     font-size: 35px;
     color: white;
     text-align: left;
-    font-weight: normal;
-    font-style: normal;
     font-weight: bold;
 }
 
+/* Clase para encabezado h1 en negro */
 .black-h1 {
     font-family: system-ui, -apple-system, Roboto, sans-serif;
     font-size: 55px;
     color: black;
     text-align: left;
-    font-weight: normal;
-    font-style: normal;
     font-weight: bolder;
 }
 
+/* Clase para el tamaño de los iconos */
 .tam-iconos {
     display: flex;
     max-width: 75px;
@@ -380,9 +374,9 @@ h2 {
     margin-bottom: 50px;
     margin-right: 50px;
     margin-left: 50px;
-
 }
 
+/* Clase para el texto en la barra */
 .texto-barra {
     display: flex;
     flex-direction: row;
@@ -391,15 +385,14 @@ h2 {
     font-size: 15px;
     color: black;
     text-align: center;
-    font-weight: normal;
-    font-style: normal;
     margin-left: 100px;
     list-style: none;
     text-decoration: none;
     position: relative;
-    bottom: 15px
+    bottom: 15px;
 }
 
+/* Clase para la barra superior */
 .barra-arriba {
     display: flex;
     flex-wrap: wrap;
@@ -412,9 +405,7 @@ h2 {
     background-color: rgb(204, 202, 202);
 }
 
-
-
-
+/* Clase para el avatar */
 .avatar {
     display: flex;
     justify-content: flex-end;
@@ -424,6 +415,7 @@ h2 {
     text-align: center;
 }
 
+/* Clase para las categorías */
 .categorias {
     display: flex;
     flex-wrap: wrap;
@@ -437,6 +429,7 @@ h2 {
     background: linear-gradient(grey 50%, black);
 }
 
+/* Clase para las filas de categorías */
 .categorias-row {
     display: flex;
     flex-wrap: wrap;
@@ -445,9 +438,9 @@ h2 {
     justify-content: left;
     text-align: center;
     margin-bottom: 25px;
-
 }
 
+/* ID para centrar el cuadro de ver receta */
 #square-see-recipe-center {
     border: solid 2px;
     font-family: system-ui, -apple-system, Roboto, sans-serif;
@@ -458,15 +451,15 @@ h2 {
     color: rgb(255, 255, 255);
     text-align: center;
     font-size: 20px;
-
 }
 
-
+/* ID para centrar el texto del cabezal */
 #cabezal-text-center {
     margin-top: 200px;
     margin-left: 550px;
 }
 
+/* ID para la imagen del cabezal */
 #cabezal-image {
     display: flex;
     flex-wrap: wrap;
@@ -481,6 +474,7 @@ h2 {
     position: relative;
 }
 
+/* ID para el título de la última receta */
 #title-latest-recipe {
     display: flex;
     flex-wrap: wrap;
@@ -490,8 +484,7 @@ h2 {
     text-align: left;
 }
 
-
-
+/* ID para la flexibilidad de no perderse una receta */
 #flex-miss-recipe {
     display: flex;
     flex-direction: row;
@@ -507,9 +500,9 @@ h2 {
     box-sizing: border-box;
     position: relative;
     left: 15px;
-
 }
 
+/* Media queries para pantallas pequeñas */
 @media (min-width: 1px) and (max-width: 1267px) {
     .menu-hamburguesa {
         display: block;
@@ -560,7 +553,6 @@ h2 {
         width: 300px;
     }
 
-
     .introduce-mail input[type="email"] {
         width: 200px;
         height: 85px;
@@ -600,7 +592,6 @@ h2 {
         width: auto;
         max-width: 250px;
         /* Establece un límite de ancho si es necesario */
-
     }
 
     .logo-pie-pagina {
@@ -619,7 +610,6 @@ h2 {
         margin-bottom: 80px;
         position: relative;
         right: 0px;
-
     }
 
     .social-media {
@@ -647,7 +637,6 @@ h2 {
         justify-content: center;
         /* Centrará el contenido dentro del div */
         align-items: center;
-
     }
 
     .texto-popular-recipes {
@@ -661,5 +650,4 @@ h2 {
     .content-flex-most-popular {
         bottom: 140px;
     }
-
 }
